@@ -40,7 +40,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 10. AM 8:17:26</span>
+    <span class="time">Last updated: 2026. 3. 10. AM 8:27:24</span>
   </div>
   <div id="map"></div>
   <script>
@@ -50,35 +50,6 @@
     }).addTo(map);
 
     
-    L.circleMarker([33.32, 44.37], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 바그다드</b><br>' +
-      '<small>Baghdad</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'استهدفت قاعدة عسكرية أميركية ببغداد](https://shafaq.com/ar/%D8%A3%D9%85%D9%80%D9<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
-    );
-
-    L.circleMarker([36.19, 44.01], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 아르빌</b><br>' +
-      '<small>Erbil</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'اط طائرتين مسيرتين إحداهما في أربيل وأخرى استهدفت قاعدة عسكرية أميركية ببغداد](h<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
-    );
 
     var legend = L.control({position: 'bottomright'});
     legend.onAdd = function() {
