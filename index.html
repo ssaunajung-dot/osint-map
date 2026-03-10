@@ -2,6 +2,9 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iraq OSINT Map</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
@@ -40,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 10. AM 9:00:25</span>
+    <span class="time">Last updated: 2026. 3. 10. AM 11:01:29</span>
   </div>
   <div id="map"></div>
   <script>
@@ -50,7 +53,7 @@
     }).addTo(map);
 
     
-    L.circleMarker([36.19, 44.01], {
+    L.circleMarker([33.32, 44.37], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -58,10 +61,25 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 아르빌</b><br>' +
-      '<small>Erbil</small><br>' +
+      '<b>⚔️ 바그다드</b><br>' +
+      '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '한 국경지역 군사적 긴장의 중요한 징후임.  5. **Erbil strike photo altered by AI exaggerates blaze<br>' +
+      '**보고 시각**: 2026-03-10 11:00 (Baghdad Time, UTC+3)   **분석 대상 기간**: 직전 2시간 수신 피드  <br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | military'
+    );
+
+    L.circleMarker([35.47, 44.39], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 키르쿠크</b><br>' +
+      '<small>Kirkuk</small><br>' +
+      '<hr style="margin:4px 0">' +
+      'aqinews.com/iraq/baghdad-eyes-kirkuk-ceyhan-pipeline-as-war-disrupts-gulf-oil-ex<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | military'
     );
 
