@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 10. PM 3:00:42</span>
+    <span class="time">Last updated: 2026. 3. 10. PM 5:01:12</span>
   </div>
   <div id="map"></div>
   <script>
@@ -64,7 +64,52 @@
       '<b>⚔️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '**보고 시각**: 2026-03-10T15:00 (Baghdad Time, UTC+3)   **분석 대상 기간**: 직전 2시간 수신 피드  <br>' +
+      '**보고 시각**: 2026-03-10 17:00 (Baghdad Time, UTC+3)   **분석 대상 기간**: 최근 2시간 수신 피드  <br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | military'
+    );
+
+    L.circleMarker([36.19, 44.01], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 아르빌</b><br>' +
+      '<small>Erbil</small><br>' +
+      '<hr style="margin:4px 0">' +
+      'd)   - 키르쿠크 (Kirkuk)   - 에르빌 (Erbil), 쿠르드 자치지역   - 미산 (Maysan), 바빌 (Babil), 디얄라 <br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | military'
+    );
+
+    L.circleMarker([35.47, 44.39], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 키르쿠크</b><br>' +
+      '<small>Kirkuk</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '- 바그다드 (Baghdad)   - 키르쿠크 (Kirkuk)   - 에르빌 (Erbil), 쿠르드 자치지역   - 미산 (Maysan), 바빌<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | military'
+    );
+
+    L.circleMarker([33.75, 45], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 디얄라</b><br>' +
+      '<small>Diyala</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '미산 (Maysan), 바빌 (Babil), 디얄라 (Diyala), 살라딘 (Salahuddin)   - 호르무즈 해협 (Strait of H<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | military'
     );
 
