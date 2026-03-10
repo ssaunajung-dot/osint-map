@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iraq OSINT Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; }
+    #header {
+      background: #1a1a2e;
+      color: white;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #header h1 { margin: 0; font-size: 18px; }
+    #header .time { font-size: 13px; color: #aaa; }
+    #map { height: calc(100vh - 50px); }
+    .legend {
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      font-size: 13px;
+      line-height: 2;
+    }
+    .legend i {
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      border-radius: 50%;
+      margin-right: 6px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>🇮🇶 Iraq OSINT Map</h1>
+    <span class="time">Last updated: 2026. 3. 10. AM 7:54:07</span>
+  </div>
+  <div id="map"></div>
+  <script>
+    var map = L.map('map').setView([33.3, 44.4], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    
+    L.circleMarker([33.32, 44.37], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 바그다드</b><br>' +
+      '<small>Baghdad</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '1%D8%A7%D8%AA) - [الكويت تبلغ بغداد بتسجيل هجمات من داخل الأراضي العراقية](https<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | military'
+    );
+
+    L.circleMarker([36.19, 44.01], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 아르빌</b><br>' +
+      '<small>Erbil</small><br>' +
+      '<hr style="margin:4px 0">' +
+      'ف للدولار ببغداد واستقراره في أربيل مع إغلاق البورصة](https://shafaq.com/ar/%D8%<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | military'
+    );
+
+    var legend = L.control({position: 'bottomright'});
+    legend.onAdd = function() {
+      var div = L.DomUtil.create('div', 'legend');
+      div.innerHTML =
+        '<b>Severity</b><br>' +
+        '<i style="background:#e74c3c"></i> High<br>' +
+        '<i style="background:#f39c12"></i> Medium<br>' +
+        '<i style="background:#3498db"></i> Low<br>' +
+        '<br><b>Category</b><br>' +
+        '⚔️ Military | 🏛️ Political<br>' +
+        '💰 Economic | 🏥 Humanitarian<br>' +
+        '🚧 Border';
+      return div;
+    };
+    legend.addTo(map);
+  </script>
+</body>
+</html>
