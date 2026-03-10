@@ -40,7 +40,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 10. AM 7:54:07</span>
+    <span class="time">Last updated: 2026. 3. 10. AM 8:09:10</span>
   </div>
   <div id="map"></div>
   <script>
@@ -50,19 +50,19 @@
     }).addTo(map);
 
     
-    L.circleMarker([33.32, 44.37], {
-      radius: 9,
-      fillColor: '#f39c12',
+    L.circleMarker([36.34, 43.12], {
+      radius: 12,
+      fillColor: '#e74c3c',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 바그다드</b><br>' +
-      '<small>Baghdad</small><br>' +
+      '<b>⚔️ 니네베</b><br>' +
+      '<small>Nineveh</small><br>' +
       '<hr style="margin:4px 0">' +
-      '1%D8%A7%D8%AA) - [الكويت تبلغ بغداد بتسجيل هجمات من داخل الأراضي العراقية](https<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
+      'دف اللواء 30 في الحشد الشعبي بنينوى](https://shafaq.com/ar/%D8%A3%D9%85%DB%80%D9<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
     L.circleMarker([36.19, 44.01], {
@@ -76,8 +76,23 @@
       '<b>⚔️ 아르빌</b><br>' +
       '<small>Erbil</small><br>' +
       '<hr style="margin:4px 0">' +
-      'ف للدولار ببغداد واستقراره في أربيل مع إغلاق البورصة](https://shafaq.com/ar/%D8%<br>' +
+      '**[إسقاط ثلاث طائرات مسيرة في أربيل (쿠르드 테러 대응)](https://shafaq.com/ar/%D9%83%D9<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | military'
+    );
+
+    L.circleMarker([35.47, 44.39], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 키르쿠크</b><br>' +
+      '<small>Kirkuk</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '*[Five PMF fighters killed in Kirkuk](https://www.iraqinews.com/iraq/five-pmf-fi<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
     var legend = L.control({position: 'bottomright'});
