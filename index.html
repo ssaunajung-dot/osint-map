@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 11. PM 5:01:22</span>
+    <span class="time">Last updated: 2026. 3. 11. PM 7:01:48</span>
   </div>
   <div id="map"></div>
   <script>
@@ -53,21 +53,6 @@
     }).addTo(map);
 
     
-    L.circleMarker([36.34, 43.12], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 니네베</b><br>' +
-      '<small>Nineveh</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '📍 시리아-이라크 국경 전역(특히 دير الزور–نينوى/الأنبار 인접 축)   - 🔮 전망: 이라크 측 국경수비대·PMF와의 조<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
-    );
-
     L.circleMarker([33.32, 44.37], {
       radius: 9,
       fillColor: '#f39c12',
@@ -79,22 +64,7 @@
       '<b>⚔️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '**보고 시각**: 2026-03-11 17:00 (Baghdad, UTC+3)   **분석 기간**: 15:00–17:00 수신 피드   **<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
-    );
-
-    L.circleMarker([33.4, 43.3], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 안바르</b><br>' +
-      '<small>Anbar</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '-이라크 국경 전역(특히 دير الزور–نينوى/الأنبار 인접 축)   - 🔮 전망: 이라크 측 국경수비대·PMF와의 조율 및 상호<br>' +
+      '**보고 시각**: 2026-03-11 19:00 (Baghdad, UTC+3)   **분석 기간**: 17:00–19:00   **기사 현황*<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | military'
     );
 
