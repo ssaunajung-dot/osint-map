@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 12. AM 11:01:13</span>
+    <span class="time">Last updated: 2026. 3. 12. PM 1:00:59</span>
   </div>
   <div id="map"></div>
   <script>
@@ -64,23 +64,8 @@
       '<b>⚔️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '� Iraq OSINT 브리핑   보고: 13:00 (Baghdad, UTC+3)   기간: 직전 2시간 | 44건 수신 / 6건 선별    �<br>' +
+      '� Iraq OSINT 브리핑   보고: 13:00 (Baghdad, UTC+3)   기간: 직전 2시간 | 68건 수신 / 8건 선별    �<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([30.51, 47.78], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 바스라</b><br>' +
-      '<small>Basra</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '경 폐쇄    🗺️ 지명   القائم(알카임), البصرة(바스라), Penjwen(펜주윈)<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
     );
 
     var legend = L.control({position: 'bottomright'});
