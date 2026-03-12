@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 12. PM 2:04:12</span>
+    <span class="time">Last updated: 2026. 3. 12. PM 3:00:31</span>
   </div>
   <div id="map"></div>
   <script>
@@ -53,6 +53,21 @@
     }).addTo(map);
 
     
+    L.circleMarker([33.2232, 43.6793], {
+      radius: 6,
+      fillColor: '#3498db',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>🏛️ 이라크</b><br>' +
+      '<small>Iraq</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '브리핑 대상 국가<br>' +
+      '<span style="color:#3498db">● LOW</span> | political'
+    );
+
     L.circleMarker([33.3152, 44.3661], {
       radius: 9,
       fillColor: '#f39c12',
@@ -64,38 +79,8 @@
       '<b>🏛️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이라크 정계 동향(말리키 조건부 사퇴론·아사이브의 수다니 연임 압박) 및 브리핑 기준 시각 표기<br>' +
+      'PMF 표적화 규탄 및 정치 협상 관련 발언/보도<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([33.2232, 43.6793], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 이라크</b><br>' +
-      '<small>Iraq</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '브리핑 대상 국가 및 유전 항만 운영 중단/상선 피격 등 국가 차원 동향<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([32.4682, 44.5502], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 바빌주</b><br>' +
-      '<small>Babil Governorate</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '바빌 북부 PMF(카타이브 헤즈볼라) 거점 공습 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
     L.circleMarker([36.1911, 44.0092], {
@@ -109,23 +94,8 @@
       '<b>⚔️ 쿠르드 지역</b><br>' +
       '<small>Kurdistan Region</small><br>' +
       '<hr style="margin:4px 0">' +
-      '쿠르드 지역 내 드론 요격 발생(아르빌·술라이마니야)<br>' +
+      '드론 요격 및 폭발음 동시 보고<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([36.1911, 44.0092], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ KRI</b><br>' +
-      '<small>Kurdistan Region of Iraq</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'KRI 내 방공 경계 강화 가능성 언급(드론 요격 관련)<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
     );
 
     L.circleMarker([36.1911, 44.0092], {
@@ -139,11 +109,11 @@
       '<b>⚔️ 아르빌</b><br>' +
       '<small>Erbil</small><br>' +
       '<hr style="margin:4px 0">' +
-      '드론 2대 요격/격추 보도<br>' +
+      '드론 요격(2대) 보고<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([35.5613, 45.4346], {
+    L.circleMarker([35.5613, 45.4351], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -154,11 +124,11 @@
       '<b>⚔️ 술라이마니야</b><br>' +
       '<small>Sulaymaniyah</small><br>' +
       '<hr style="margin:4px 0">' +
-      '드론 1대 격추 보도(시내 메르크반 지역)<br>' +
+      '드론 요격(1대) 보고<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([35.5613, 45.4346], {
+    L.circleMarker([35.5613, 45.4351], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -166,14 +136,59 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 메르크반</b><br>' +
-      '<small>Mirkaban</small><br>' +
+      '<b>⚔️ 미르크반</b><br>' +
+      '<small>Mirkban</small><br>' +
       '<hr style="margin:4px 0">' +
-      '술라이마니야 시내 메르크반 지역에서 드론 1대 격추 보도<br>' +
+      '술라이마니야 인근(표기 지점)에서 드론 요격 관련 언급<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([30.5085, 47.7804], {
+    L.circleMarker([32.4682, 44.5502], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 바빌</b><br>' +
+      '<small>Babil</small><br>' +
+      '<hr style="margin:4px 0">' +
+      'PMF(카타이브 헤즈볼라) 거점 공습 보도<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([32.4682, 44.5502], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 바빌 주 북부</b><br>' +
+      '<small>Northern Babil Governorate</small><br>' +
+      '<hr style="margin:4px 0">' +
+      'PMF 관련 시설 공습 범위(바빌 주 북부) 언급<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([26.9, 51], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>💰 페르시아만</b><br>' +
+      '<small>Persian Gulf</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '탱커 피격 이후 남부 석유항만 가동 중단 주장(연안 언급)<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | economic'
+    );
+
+    L.circleMarker([31.9539, 35.9106], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -181,44 +196,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 이라크 남부</b><br>' +
-      '<small>Southern Iraq</small><br>' +
+      '<b>💰 암만</b><br>' +
+      '<small>Amman</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이라크 남부 유전 항만(석유항) 운영 전면 중단 보도<br>' +
+      '이라크 수출 목적지/무역축(암만-바그다드) 언급<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
-    L.circleMarker([26.937, 52.164], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>📍 페르시아만</b><br>' +
-      '<small>Persian Gulf</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '이라크 유전 항만(석유항) 중단 및 북부 걸프 상선 피격 경보 관련 해역 언급<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | infrastructure'
-    );
-
-    L.circleMarker([29.5, 48.5], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>📍 북부 걸프 해역</b><br>' +
-      '<small>Northern Persian Gulf</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'UKMTO 북부 걸프 상선 피격(ATTACK) 경보<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | infrastructure'
-    );
-
-    L.circleMarker([26.937, 52.164], {
+    L.circleMarker([33.3152, 44.3661], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -226,11 +211,26 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ 걸프 해역</b><br>' +
-      '<small>Gulf waters</small><br>' +
+      '<b>💰 암만-바그다드 무역축</b><br>' +
+      '<small>Amman–Baghdad trade axis</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이란 의회 의장 발언으로 걸프 해역 위협/긴장 고조 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
+      '역내 물류·무역 의존도 관련 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | economic'
+    );
+
+    L.circleMarker([30.5852, 36.2384], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>💰 요르단</b><br>' +
+      '<small>Jordan</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '이라크 수출 1위 목적지로 부상 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
     L.circleMarker([32.4279, 53.688], {
@@ -241,14 +241,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ 이란</b><br>' +
+      '<b>🏥 이란</b><br>' +
       '<small>Iran</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이란 의회 의장 발언(걸프 위협·자제 종료) 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
+      'UNHCR 국내실향민(320만) 발표 관련 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | humanitarian'
     );
 
-    L.circleMarker([35.6892, 51.389], {
+    L.circleMarker([32.4279, 53.688], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -256,56 +256,26 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ 테헤란</b><br>' +
-      '<small>Tehran</small><br>' +
+      '<b>🏥 이란 전역</b><br>' +
+      '<small>Nationwide Iran</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이란 의회 의장 발언 출처 도시로 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
+      '국내실향민 규모(전국 단위) 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | humanitarian'
     );
 
-    L.circleMarker([30.5852, 36.2384], {
-      radius: 6,
-      fillColor: '#3498db',
+    L.circleMarker([33.2232, 43.6793], {
+      radius: 9,
+      fillColor: '#f39c12',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 요르단</b><br>' +
-      '<small>Jordan</small><br>' +
+      '<b>🏥 이라크 국경</b><br>' +
+      '<small>Iraq border</small><br>' +
       '<hr style="margin:4px 0">' +
-      '요르단 수출 1위 목적지로 이라크 부상(교역 동향)<br>' +
-      '<span style="color:#3498db">● LOW</span> | economic'
-    );
-
-    L.circleMarker([31.9539, 35.9106], {
-      radius: 6,
-      fillColor: '#3498db',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>💰 암만</b><br>' +
-      '<small>Amman</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '요르단-이라크 교역 동향 관련 언급(바그다드/암만)<br>' +
-      '<span style="color:#3498db">● LOW</span> | economic'
-    );
-
-    L.circleMarker([32, 44], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 이라크 중부</b><br>' +
-      '<small>Central Iraq</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '공습 범위가 이라크 중부(바빌)로 확장 정황 언급<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
+      '이란발 인도주의 파급의 국경·난민 변수 전이 가능성 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | humanitarian'
     );
 
     var legend = L.control({position: 'bottomright'});
