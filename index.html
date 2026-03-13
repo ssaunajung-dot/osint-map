@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 13. PM 7:00:31</span>
+    <span class="time">Last updated: 2026. 3. 13. PM 10:00:25</span>
   </div>
   <div id="map"></div>
   <script>
@@ -53,24 +53,9 @@
     }).addTo(map);
 
     
-    L.circleMarker([33.2232, 43.6793], {
+    L.circleMarker([33.3152, 44.3661], {
       radius: 9,
       fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 이라크</b><br>' +
-      '<small>Iraq</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '이라크 OSINT 브리핑 및 영공 폐쇄 연장 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([33.3152, 44.3661], {
-      radius: 6,
-      fillColor: '#3498db',
       color: '#fff',
       weight: 2,
       opacity: 1,
@@ -79,161 +64,116 @@
       '<b>🏛️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '브리핑 기준 시각/위치 표기<br>' +
-      '<span style="color:#3498db">● LOW</span> | political'
-    );
-
-    L.circleMarker([36.1911, 44.0092], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 에르빌</b><br>' +
-      '<small>Erbil</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '이란계 쿠르드 반정부 조직 겨냥 드론 요격·추락 및 표적형 드론 위험 상승<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([36.1911, 44.0092], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 에르빌 주</b><br>' +
-      '<small>Erbil Governorate</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '코이산자크·코이 지역 드론 사건 발생 지역으로 언급<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([36.0833, 44.6333], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 코이산자크</b><br>' +
-      '<small>Koysinjaq</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '‘표적 공격 시도’ 드론 요격 후 격추로 전환 보고<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([36.0833, 44.6333], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 코이(코예)</b><br>' +
-      '<small>Koysinjaq (Koye)</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '‘아자디 캠프’ 드론 피격 신고<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([36.0833, 44.6333], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 아자디 캠프</b><br>' +
-      '<small>Azadi Camp</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '드론에 의한 캠프 직접 타격 보고<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([32.5598, 41.9196], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 서부 이라크</b><br>' +
-      '<small>Western Iraq</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'KC-135 추락(승무원 6명 전원 사망) 및 적대행위 여부 공방<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([38.9072, -77.0369], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 워싱턴</b><br>' +
-      '<small>Washington, D.C.</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '미 합참의 ‘서부 이라크 추락은 적대행위 아님’ 입장 발표<br>' +
+      '브리핑 기준 시각 및 주이라크 미국대사관 경고 재공지 관련 언급<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | political'
     );
 
-    L.circleMarker([26.5667, 56.25], {
-      radius: 9,
-      fillColor: '#f39c12',
+    L.circleMarker([33.2628, 44.2346], {
+      radius: 12,
+      fillColor: '#e74c3c',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 호르무즈</b><br>' +
-      '<small>Strait of Hormuz</small><br>' +
+      '<b>⚔️ 바그다드 국제공항</b><br>' +
+      '<small>Baghdad International Airport</small><br>' +
       '<hr style="margin:4px 0">' +
-      '봉쇄 대응 옵션 및 해상호위 논의 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
+      '공항 인근 외교지원센터 접근 무인기 2대 연속 격추<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([35.4681, 44.3922], {
-      radius: 9,
-      fillColor: '#f39c12',
+    L.circleMarker([33.2628, 44.2346], {
+      radius: 12,
+      fillColor: '#e74c3c',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 키르쿠크</b><br>' +
-      '<small>Kirkuk</small><br>' +
+      '<b>⚔️ 외교지원센터</b><br>' +
+      '<small>Diplomatic Support Center (Baghdad International Airport area)</small><br>' +
       '<hr style="margin:4px 0">' +
-      '원유 수출 4일 중단 후 쿠르드 관로 통해 재개<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | economic'
+      '무인기들이 외교지원센터로 접근 시도, 방공에 의해 차단<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([39, 35], {
-      radius: 9,
-      fillColor: '#f39c12',
+    L.circleMarker([33.2628, 44.2346], {
+      radius: 12,
+      fillColor: '#e74c3c',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 터키</b><br>' +
-      '<small>Turkey</small><br>' +
+      '<b>⚔️ 빅토리 기지</b><br>' +
+      '<small>Victory Base Complex</small><br>' +
       '<hr style="margin:4px 0">' +
-      '키르쿠크 원유가 제이한 방향(터키)으로 송유 재개 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | economic'
+      '바그다드 국제공항 인근(구 명칭)으로 무인기 격추 사건 위치 맥락에 포함<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([37.0247, 35.8172], {
+    L.circleMarker([35.4692, 44.391], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 키원(K1) 군기지</b><br>' +
+      '<small>K1 Military Base</small><br>' +
+      '<hr style="margin:4px 0">' +
+      'K1 기지 박격포 공격 보고(2발), 주변 폭발음 확인<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([35.4692, 44.391], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 키르쿠크 주</b><br>' +
+      '<small>Kirkuk Governorate</small><br>' +
+      '<hr style="margin:4px 0">' +
+      'K1 군기지 박격포 공격이 보고된 관할 지역으로 언급<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([35.6689, 44.2356], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ الدبس</b><br>' +
+      '<small>Al-Dibs</small><br>' +
+      '<hr style="margin:4px 0">' +
+      'K1 기지 위치 설명(الدبس 방면 북서부) 맥락에서 언급<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([33.4206, 43.2958], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 이라크 서부</b><br>' +
+      '<small>Western Iraq</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '미 KC-135 공중급유기 이라크 서부 추락, 6명 전원 사망<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([33.3056, 44.1861], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -241,11 +181,26 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 제이한</b><br>' +
-      '<small>Ceyhan</small><br>' +
+      '<b>📍 아부그라이브</b><br>' +
+      '<small>Abu Ghraib</small><br>' +
       '<hr style="margin:4px 0">' +
-      '키르쿠크 원유 수출 재개 목적지(송유 방향)로 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | economic'
+      '아부그라이브 전력시설 화재 관련(드론 공격설 부인)<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | infrastructure'
+    );
+
+    L.circleMarker([33.3152, 44.3661], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>📍 바그다드 서부</b><br>' +
+      '<small>West Baghdad</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '아부그라이브 전력시설 화재 위치를 '바그다드 서부'로 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | infrastructure'
     );
 
     var legend = L.control({position: 'bottomright'});
