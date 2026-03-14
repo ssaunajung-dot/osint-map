@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 14. AM 7:00:48</span>
+    <span class="time">Last updated: 2026. 3. 14. AM 11:00:41</span>
   </div>
   <div id="map"></div>
   <script>
@@ -54,18 +54,18 @@
 
     
     L.circleMarker([33.2232, 43.6793], {
-      radius: 9,
-      fillColor: '#f39c12',
+      radius: 6,
+      fillColor: '#3498db',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>📍 이라크</b><br>' +
+      '<b>🏛️ 이라크</b><br>' +
       '<small>Iraq</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이라크 영공 폐쇄 연장(월요일 정오까지)<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | infrastructure'
+      'OSINT 브리핑 대상 국가<br>' +
+      '<span style="color:#3498db">● LOW</span> | political'
     );
 
     L.circleMarker([33.3152, 44.3661], {
@@ -79,7 +79,7 @@
       '<b>⚔️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '바그다드 중심부 알아라사트 일대 주택 로켓 피격 의심/폭발 및 PMF 조사<br>' +
+      '도심 폭발 및 그린존 내 미 대사관 로켓 피격 보고<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
@@ -91,10 +91,10 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 알아라사트</b><br>' +
-      '<small>Al-Arasat</small><br>' +
+      '<b>⚔️ 알-아르사트</b><br>' +
+      '<small>Al-Arsat</small><br>' +
       '<hr style="margin:4px 0">' +
-      '알아라사트 주택 피격 의심 및 폭발로 부상자 보고<br>' +
+      '바그다드 카라다 지구 알-아르사트에서 폭발로 사상자 발생<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
@@ -106,10 +106,10 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 카라다</b><br>' +
-      '<small>Karrada</small><br>' +
+      '<b>⚔️ 카라다 지구</b><br>' +
+      '<small>Karrada District</small><br>' +
       '<hr style="margin:4px 0">' +
-      '카라다(알마스바흐-알아라사트) 일대 폭발로 부상자 보고<br>' +
+      '알-아르사트 폭발 발생 지역(바그다드 내)<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
@@ -121,26 +121,41 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 알마스바흐</b><br>' +
-      '<small>Al-Masbah</small><br>' +
+      '<b>⚔️ 그린존</b><br>' +
+      '<small>Green Zone</small><br>' +
       '<hr style="margin:4px 0">' +
-      '알마스바흐-알아라사트 인근 폭발/피격 의심<br>' +
+      '그린존 내 외교시설(미 대사관 단지) 로켓 공격으로 일부 손상 보고<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
     L.circleMarker([33.3152, 44.3661], {
-      radius: 9,
-      fillColor: '#f39c12',
+      radius: 12,
+      fillColor: '#e74c3c',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>📍 그린존</b><br>' +
-      '<small>Green Zone (Baghdad)</small><br>' +
+      '<b>⚔️ 미 대사관 단지(바그다드)</b><br>' +
+      '<small>U.S. Embassy Compound, Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '바그다드 도심 표적성 타격 의혹 지속 시 그린존 경계 상향 가능성<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | security'
+      '로켓 공격으로 시설 손상 및 화재·연기 관측 보고<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([36.1911, 44.0092], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 쿠르드 지역</b><br>' +
+      '<small>Kurdistan Region</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '에르빌·술라이마니야 상공에서 드론 2기 요격 보고<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
     L.circleMarker([36.1911, 44.0092], {
@@ -154,11 +169,11 @@
       '<b>⚔️ 에르빌</b><br>' +
       '<small>Erbil</small><br>' +
       '<hr style="margin:4px 0">' +
-      '에르빌 상공 드론 여러 대 요격 및 폭발음 보고(연합군 방공)<br>' +
+      '상공에서 미상 드론 요격 및 달러 환율 언급<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([36.1911, 44.0092], {
+    L.circleMarker([35.5613, 45.4309], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -166,116 +181,56 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 쿠르드자치지역</b><br>' +
-      '<small>Kurdistan Region</small><br>' +
+      '<b>⚔️ 술라이마니야</b><br>' +
+      '<small>Sulaymaniyah</small><br>' +
       '<hr style="margin:4px 0">' +
-      '쿠르드자치지역 에르빌 인근 연합군 기지 주변 방공 가동/드론 요격 보고<br>' +
+      '상공에서 미상 드론 요격 보고<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([36.34, 43.13], {
-      radius: 12,
-      fillColor: '#e74c3c',
+    L.circleMarker([33.3152, 44.3661], {
+      radius: 6,
+      fillColor: '#3498db',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 니나와</b><br>' +
-      '<small>Nineveh Governorate</small><br>' +
+      '<b>💰 알-카파흐</b><br>' +
+      '<small>Al-Kifah</small><br>' +
       '<hr style="margin:4px 0">' +
-      '니나와 평원/동모술 권역 ‘사이드 알슈하다’ 단지 공습 보도(인명피해 없음)<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
+      '바그다드 내 달러 환율 하락(주초 거래) 언급 지역<br>' +
+      '<span style="color:#3498db">● LOW</span> | economic'
     );
 
-    L.circleMarker([36.34, 43.13], {
-      radius: 12,
-      fillColor: '#e74c3c',
+    L.circleMarker([33.3152, 44.3661], {
+      radius: 6,
+      fillColor: '#3498db',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 니나와 평원</b><br>' +
-      '<small>Nineveh Plains</small><br>' +
+      '<b>💰 알-하리티야</b><br>' +
+      '<small>Al-Harithiya</small><br>' +
       '<hr style="margin:4px 0">' +
-      '니나와 평원 ‘사이드 알슈하다’ 단지 공습 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
+      '바그다드 내 달러 환율 하락(주초 거래) 언급 지역<br>' +
+      '<span style="color:#3498db">● LOW</span> | economic'
     );
 
-    L.circleMarker([36.3519, 43.3786], {
-      radius: 12,
-      fillColor: '#e74c3c',
+    L.circleMarker([30.5085, 47.7804], {
+      radius: 6,
+      fillColor: '#3498db',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 바르틀라</b><br>' +
-      '<small>Bartella</small><br>' +
+      '<b>💰 바스라</b><br>' +
+      '<small>Basra</small><br>' +
       '<hr style="margin:4px 0">' +
-      '바르틀라 소재 ‘사이드 알슈하다 문화단지’ 공습 보도(인명피해 없음)<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([36.3456, 43.1575], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 모술</b><br>' +
-      '<small>Mosul</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '동모술 권역에서 특정 단지 공습 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([34.8021, 38.9968], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 시리아</b><br>' +
-      '<small>Syria</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '니나와-시리아 접경 축 경계태세 강화 가능성 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
-    );
-
-    L.circleMarker([35.4681, 44.3922], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 키르쿠크</b><br>' +
-      '<small>Kirkuk</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '키르쿠크 북서 지역에서 폭발물 탑재 드론 추락 후 폭발 보고<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([35.6956, 43.9958], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 알둡스</b><br>' +
-      '<small>Al-Dibs</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '알둡스에서 드론 추락 폭발 보고<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
+      '바스라 원유 가격 급등 지속 언급<br>' +
+      '<span style="color:#3498db">● LOW</span> | economic'
     );
 
     var legend = L.control({position: 'bottomright'});
