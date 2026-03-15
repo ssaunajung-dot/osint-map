@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 15. PM 3:00:37</span>
+    <span class="time">Last updated: 2026. 3. 15. PM 7:00:27</span>
   </div>
   <div id="map"></div>
   <script>
@@ -54,18 +54,18 @@
 
     
     L.circleMarker([33.2232, 43.6793], {
-      radius: 9,
-      fillColor: '#f39c12',
+      radius: 12,
+      fillColor: '#e74c3c',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ 이라크</b><br>' +
+      '<b>⚔️ 이라크</b><br>' +
       '<small>Iraq</small><br>' +
       '<hr style="margin:4px 0">' +
-      '미국 대사관의 자국민 즉시 출국 경보 및 전반적 위협 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
+      '브리핑 지역(이라크 OSINT) 및 서부 이라크 KC-135 항공사고 언급<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
     L.circleMarker([33.3152, 44.3661], {
@@ -79,11 +79,11 @@
       '<b>🏛️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '미국 대사관 관련 즉시 출국 경보 및 경계 강화 가능성 언급<br>' +
+      '브리핑 기준 위치 및 총리의 PMF·보안군 시설 공격 거부 발언, 환율 동향 언급<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | political'
     );
 
-    L.circleMarker([32.4786, 44.4326], {
+    L.circleMarker([29.3117, 47.4818], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -91,56 +91,116 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 바빌론 주</b><br>' +
-      '<small>Babil Governorate</small><br>' +
+      '<b>📍 쿠웨이트</b><br>' +
+      '<small>Kuwait</small><br>' +
       '<hr style="margin:4px 0">' +
-      'PMF 거점 폭발 및 낙하물(탄도미사일 잔해) 보도 확산<br>' +
+      '쿠웨이트 국제공항 레이더가 드론 공격으로 손상(국방부 발표)<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | infrastructure'
+    );
+
+    L.circleMarker([29.3759, 47.9774], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>📍 쿠웨이트시티</b><br>' +
+      '<small>Kuwait City</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '쿠웨이트 국제공항 인근(쿠웨이트시티)에서 드론 공격으로 레이더 손상 보고<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | infrastructure'
+    );
+
+    L.circleMarker([29.2266, 47.9689], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>📍 쿠웨이트 국제공항</b><br>' +
+      '<small>Kuwait International Airport</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '드론 3대 공격으로 공항 레이더 손상<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | infrastructure'
+    );
+
+    L.circleMarker([25, 51], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>📍 걸프권</b><br>' +
+      '<small>Persian Gulf region (Gulf states)</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '걸프권 공항·항만 방공 강화 가능성 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | infrastructure'
+    );
+
+    L.circleMarker([33, 41], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 서부 이라크</b><br>' +
+      '<small>Western Iraq</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '미 KC-135 공중급유기 항공사고(정확 지점 미공개)로 사망자 발생<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([32.4786, 44.4326], {
-      radius: 12,
-      fillColor: '#e74c3c',
+    L.circleMarker([32.5, 41.9], {
+      radius: 9,
+      fillColor: '#f39c12',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 힐라</b><br>' +
-      '<small>Hillah</small><br>' +
+      '<b>📍 안바르 주</b><br>' +
+      '<small>Al Anbar Governorate</small><br>' +
       '<hr style="margin:4px 0">' +
-      '도심 대형 폭발 발생 및 PMF 본부 타격 주장 확산<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
+      '폭풍으로 송전 전주 다수 전도 및 전력망 피해 보고<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | infrastructure'
     );
 
-    L.circleMarker([32.4786, 44.4326], {
-      radius: 12,
-      fillColor: '#e74c3c',
+    L.circleMarker([33.3491, 43.785], {
+      radius: 9,
+      fillColor: '#f39c12',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 알자자이르 지구</b><br>' +
-      '<small>Al-Jazائر District (Hillah area)</small><br>' +
+      '<b>📍 팔루자</b><br>' +
+      '<small>Fallujah</small><br>' +
       '<hr style="margin:4px 0">' +
-      '바빌론 주(힐라 인근) 폭발·치안 경계 강화 언급 지역<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
+      '강풍으로 송전 전주 붕괴 등 전력 인프라 피해 보고<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | infrastructure'
     );
 
-    L.circleMarker([32.4786, 44.4326], {
-      radius: 12,
-      fillColor: '#e74c3c',
+    L.circleMarker([34.1412, 42.3781], {
+      radius: 9,
+      fillColor: '#f39c12',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 알시아히</b><br>' +
-      '<small>Al-Siyahi (Hillah area)</small><br>' +
+      '<b>📍 하디타</b><br>' +
+      '<small>Haditha</small><br>' +
       '<hr style="margin:4px 0">' +
-      '탄도미사일 잔해 낙하 보도 지역<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
+      '강풍으로 전력 인프라 물리 피해 보고<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | infrastructure'
     );
 
     L.circleMarker([36.1911, 44.0092], {
@@ -151,14 +211,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 쿠르드 지역</b><br>' +
-      '<small>Kurdistan Region</small><br>' +
+      '<b>💰 아르빌</b><br>' +
+      '<small>Erbil</small><br>' +
       '<hr style="margin:4px 0">' +
-      '연방 석유부의 파이프라인 활용 수출 요청 거부 관련<br>' +
+      '아르빌 시장에서 달러 환율 상승 재확인<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
-    L.circleMarker([39, 35], {
+    L.circleMarker([36.2376, 43.9632], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -166,14 +226,29 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 터키</b><br>' +
-      '<small>Turkey</small><br>' +
+      '<b>⚔️ 에르빌 공항</b><br>' +
+      '<small>Erbil International Airport</small><br>' +
       '<hr style="margin:4px 0">' +
-      '지한 경유 북부 수출(송유관·항만) 관련 국가<br>' +
+      '감시 키워드로 '에르빌 공항/미군 기지' 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | military'
+    );
+
+    L.circleMarker([33.3152, 44.3661], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>💰 카파흐</b><br>' +
+      '<small>Karrada (Kaffa/Kapah as referenced)</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '바그다드 내 시장(카파흐)에서 달러 환율 상승 언급<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
-    L.circleMarker([37.0247, 35.8177], {
+    L.circleMarker([33.3152, 44.3661], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -181,85 +256,10 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 지한</b><br>' +
-      '<small>Ceyhan</small><br>' +
+      '<b>💰 하리티야</b><br>' +
+      '<small>Harithiya</small><br>' +
       '<hr style="margin:4px 0">' +
-      '쿠르드 지역-터키 지한 송유관·항만 경유 수출 대체안 거부 이슈<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | economic'
-    );
-
-    L.circleMarker([36.34, 43.13], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>💰 이라크 북부</b><br>' +
-      '<small>Northern Iraq</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '북부 수출망(지한 경유 수출) 관련 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | economic'
-    );
-
-    L.circleMarker([33.2628, 44.2346], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 바그다드 국제공항</b><br>' +
-      '<small>Baghdad International Airport</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '공항 내 기지구역이 드론 3대로 공격받았다는 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([33.2628, 44.2346], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 빅토리 베이스 컴플렉스</b><br>' +
-      '<small>Victory Base Complex</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '바그다드 국제공항 인근 기지구역 드론 공격 표적 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([33.2232, 43.6793], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>📍 이라크 전 국경</b><br>' +
-      '<small>Iraq Border (nationwide)</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '국경출입국청의 신규 국경통로 개설 예고 및 대체 통로 준비<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | infrastructure'
-    );
-
-    L.circleMarker([26.566, 56.25], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>💰 호르무즈</b><br>' +
-      '<small>Strait of Hormuz</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '호르무즈 차질 대체 목적의 북부(지한 경유) 수출 방안 언급<br>' +
+      '바그다드 내 시장(하리티야)에서 달러 환율 상승 언급<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
