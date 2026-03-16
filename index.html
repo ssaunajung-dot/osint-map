@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 16. AM 11:01:01</span>
+    <span class="time">Last updated: 2026. 3. 16. PM 3:00:46</span>
   </div>
   <div id="map"></div>
   <script>
@@ -54,18 +54,18 @@
 
     
     L.circleMarker([33.2232, 43.6793], {
-      radius: 6,
-      fillColor: '#3498db',
+      radius: 9,
+      fillColor: '#f39c12',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ 이라크</b><br>' +
+      '<b>📍 이라크</b><br>' +
       '<small>Iraq</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이라크 OSINT 브리핑 대상 국가<br>' +
-      '<span style="color:#3498db">● LOW</span> | political'
+      '이라크 공역 전면 폐쇄 72시간 추가 연장(7차)<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | infrastructure'
     );
 
     L.circleMarker([33.3152, 44.3661], {
@@ -79,13 +79,13 @@
       '<b>🏛️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '브리핑 보고 시각/의회 의제 및 바그다드권 공격 우려 언급<br>' +
+      '이라크 공역 전면 폐쇄 및 정치 이슈(조정위원회 성명) 브리핑 기준지<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | political'
     );
 
-    L.circleMarker([26.566, 56.25], {
-      radius: 12,
-      fillColor: '#e74c3c',
+    L.circleMarker([26.5667, 56.25], {
+      radius: 9,
+      fillColor: '#f39c12',
       color: '#fff',
       weight: 2,
       opacity: 1,
@@ -94,101 +94,11 @@
       '<b>💰 호르무즈 해협</b><br>' +
       '<small>Strait of Hormuz</small><br>' +
       '<hr style="margin:4px 0">' +
-      '봉쇄 및 해상 통제전 관련 언급<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | economic'
-    );
-
-    L.circleMarker([32.4279, 53.688], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 이란</b><br>' +
-      '<small>Iran</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '이란-걸프 타격 확산 및 국경 부분 개방 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([26.9, 51.2], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 걸프</b><br>' +
-      '<small>Persian Gulf</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '이란-걸프 타격 확산 맥락 언급<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([24, 54], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>📍 아랍에미리트</b><br>' +
-      '<small>United Arab Emirates</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '푸자이라 항만 공격 재차 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | infrastructure'
-    );
-
-    L.circleMarker([25.1288, 56.3265], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>📍 푸자이라</b><br>' +
-      '<small>Fujairah</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '푸자이라 항만 공격/화재 및 원유 적재 중단 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | infrastructure'
-    );
-
-    L.circleMarker([25.145, 56.357], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>📍 푸자이라 항만</b><br>' +
-      '<small>Port of Fujairah</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '추가 공격 및 화재 확인, 원유 적재 작업 일시 중단<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | infrastructure'
-    );
-
-    L.circleMarker([36.8121, 35.778], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>💰 제이한</b><br>' +
-      '<small>Ceyhan</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '이라크 수출 대체축(제이한) 압박 가능성 언급<br>' +
+      '비(非)이란 유조선 AIS 켠 채 조건부 통과 포착 및 이란의 조건부 통과 허용 주장<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
-    L.circleMarker([36.1911, 44.0092], {
+    L.circleMarker([35.6892, 51.389], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -196,26 +106,41 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏥 이라크 북부 쿠르디스탄 접경</b><br>' +
-      '<small>Northern Kurdistan Region border area (Iraq)</small><br>' +
+      '<b>🏛️ 테헤란</b><br>' +
+      '<small>Tehran</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이란 국경 부분 개방 이후 이란인들의 KRG 유입 보도<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | humanitarian'
+      '이란 외교부의 호르무즈 완전 폐쇄 아님(조건부 통과 허용) 주장<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | political'
     );
 
-    L.circleMarker([36.1911, 44.0092], {
-      radius: 9,
-      fillColor: '#f39c12',
+    L.circleMarker([32.792, 44.42], {
+      radius: 12,
+      fillColor: '#e74c3c',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ KRG</b><br>' +
-      '<small>Kurdistan Regional Government</small><br>' +
+      '<b>⚔️ 주르프 알나스르</b><br>' +
+      '<small>Jurf al-Nasr</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이란인 유입 및 중앙정부-KRG 수출 협상 압박 맥락 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
+      'PMF 본부 피격/폭발로 3명 부상 보고<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([32.792, 44.42], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 주르프 알사크르</b><br>' +
+      '<small>Jurf al-Sakhar</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '주르프 알나스르(구 명칭) 지역에서 피격/폭발 사건 언급<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
     L.circleMarker([32.4682, 44.5502], {
@@ -229,11 +154,11 @@
       '<b>⚔️ 바빌 주</b><br>' +
       '<small>Babil Governorate</small><br>' +
       '<hr style="margin:4px 0">' +
-      '주르프 알나스르 내 공습 피해 보도<br>' +
+      '주르프 알나스르(PMF 본부) 피격/폭발 발생 지역(주 단위)<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([32, 44.4], {
+    L.circleMarker([33.7733, 45.1494], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -241,14 +166,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 주르프 알나스르</b><br>' +
-      '<small>Jurf al-Nasr</small><br>' +
+      '<b>⚔️ 디얄라 주</b><br>' +
+      '<small>Diyala Governorate</small><br>' +
       '<hr style="margin:4px 0">' +
-      '2개 지점 공습 및 인원 피해 보도<br>' +
+      '폭발물 탑재 드론 1기 북부 지역 농지에 추락(피해 없음)<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([32, 44.4], {
+    L.circleMarker([34.135, 44.575], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -256,44 +181,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 주르프 알사크르</b><br>' +
-      '<small>Jurf al-Sakhar</small><br>' +
+      '<b>⚔️ 알아짐</b><br>' +
+      '<small>Al-Azim</small><br>' +
       '<hr style="margin:4px 0">' +
-      '주르프 알나스르(주르프 알사크르) 공습 사건 관련<br>' +
+      '폭발물 탑재 드론 1기 외곽 농지에 추락(피해 없음)<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([32, 44.4], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 알바흐바하니</b><br>' +
-      '<small>Al-Bahbahani (area)</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '주르프 알나스르 내 공습 보도된 구역<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([32, 44.4], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 알마야딘</b><br>' +
-      '<small>Al-Mayadin (area)</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '주르프 알나스르 내 공습 보도된 구역<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([33.3128, 44.3615], {
+    L.circleMarker([35.4681, 44.3922], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -301,14 +196,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 바그다드 국제구역</b><br>' +
-      '<small>Baghdad International Zone</small><br>' +
+      '<b>💰 키르쿠크</b><br>' +
+      '<small>Kirkuk</small><br>' +
       '<hr style="margin:4px 0">' +
-      '미 대사관 인근 드론 요격 주장 확산<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
+      'BP, 키르쿠크 유전 개발사업 외국인 인력 일부 철수 착수<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
-    L.circleMarker([33.3128, 44.3615], {
+    L.circleMarker([35.5, 44.45], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -316,40 +211,10 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 그린존</b><br>' +
-      '<small>Green Zone (Baghdad)</small><br>' +
+      '<b>💰 키르쿠크 유전지대</b><br>' +
+      '<small>Kirkuk Oil Fields</small><br>' +
       '<hr style="margin:4px 0">' +
-      '미 대사관 인근 드론 요격 주장<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
-    );
-
-    L.circleMarker([29.9133, 45.2994], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 알무트나 주</b><br>' +
-      '<small>Al Muthanna Governorate</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '주의회 부지사급 교체 의결 보도<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([39, 35], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>💰 터키</b><br>' +
-      '<small>Turkey</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '터키 경유 석유 수출 의회 의제 언급<br>' +
+      'BP 인력 철수로 유전 개발/운영 리스크 전이 우려<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
