@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 17. PM 3:01:01</span>
+    <span class="time">Last updated: 2026. 3. 17. PM 7:01:00</span>
   </div>
   <div id="map"></div>
   <script>
@@ -54,8 +54,8 @@
 
     
     L.circleMarker([33.2232, 43.6793], {
-      radius: 9,
-      fillColor: '#f39c12',
+      radius: 6,
+      fillColor: '#3498db',
       color: '#fff',
       weight: 2,
       opacity: 1,
@@ -64,83 +64,23 @@
       '<b>🏛️ 이라크</b><br>' +
       '<small>Iraq</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이라크 관련 OSINT 브리핑 전반(전쟁 파급 및 국내 동향)<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
+      'OSINT 브리핑 대상 국가/경유지로 언급<br>' +
+      '<span style="color:#3498db">● LOW</span> | political'
     );
 
     L.circleMarker([33.3152, 44.3661], {
-      radius: 12,
-      fillColor: '#e74c3c',
+      radius: 9,
+      fillColor: '#f39c12',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 바그다드</b><br>' +
+      '<b>🏛️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      'PMF 시설 공습/미 대사관 드론 위협/사법·정치 일정/급여 지급 차질 및 수출 관련 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([33.3152, 44.3661], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 알나바이</b><br>' +
-      '<small>Al-Nabai (Al-Nuba'i)</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '바그다드 북부 알나바이의 PMF(여단 12) 시설 공습으로 부상자 발생 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([33.3152, 44.3661], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 자디리야</b><br>' +
-      '<small>Jadriyah</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '직전 주기 자디리야 공습(사망 4명) 언급<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([33.3152, 44.3661], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 바그다드 그린존</b><br>' +
-      '<small>Baghdad Green Zone</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '그린존 미 대사관 표적 드론 위협 및 요격(4기 주장) 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([33.3152, 44.3661], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 미 대사관(바그다드)</b><br>' +
-      '<small>Embassy of the United States, Baghdad</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '미 대사관 표적 드론 공격 시도 및 요격(4기 주장), 대사관 주변 추락 보도<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
+      '브리핑 기준지 및 내각 발표/이란과 협의/환율 동향 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | political'
     );
 
     L.circleMarker([26.5667, 56.25], {
@@ -154,11 +94,56 @@
       '<b>💰 호르무즈 해협</b><br>' +
       '<small>Strait of Hormuz</small><br>' +
       '<hr style="margin:4px 0">' +
-      '항행 교란/선별 통과 및 봉쇄 여파로 원유 수출 급감 등 외교·경제 긴장 보도<br>' +
+      '유조선 통과·호송 및 선별 통과 협상/통과 허용 협의 언급<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
-    L.circleMarker([32.4279, 53.688], {
+    L.circleMarker([36.3456, 43.1575], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 모술</b><br>' +
+      '<small>Mosul</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '모술 남부 인근 마을에서 드론 추락(폭발 없음) 보도<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([36.3456, 43.1575], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 니네와 주</b><br>' +
+      '<small>Nineveh Governorate</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '니네와 주 모술 남부에서 드론 추락 사건 언급<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([36.3456, 43.1575], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 니스프 텔</b><br>' +
+      '<small>Nisf Tel</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '모술 남부 ‘니스프 텔’ 마을에서 무인기 추락(폭발/인명피해 없음) 보도<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([48.8566, 2.3522], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -166,11 +151,116 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ 이란</b><br>' +
-      '<small>Iran</small><br>' +
+      '<b>🏛️ 파리</b><br>' +
+      '<small>Paris</small><br>' +
       '<hr style="margin:4px 0">' +
-      '호르무즈 항행 교란 정당화 및 인도와의 교환 논의 부인 관련 당사국으로 언급<br>' +
+      '프랑스의 ‘호르무즈 개방 작전 불참’ 재확인 발언 언급<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | political'
+    );
+
+    L.circleMarker([33.4206, 43.2956], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 안바르 주</b><br>' +
+      '<small>Al Anbar Governorate</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '안바르 주 알타르타르 지역 하쉬드 알아샤이리 거점 공습 및 지휘관 부상 보도<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([33.4206, 43.2956], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 라마디</b><br>' +
+      '<small>Ramadi</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '라마디 인근 알타르타르 지역 거점 공습 보도<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([33.6, 43.7], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 알타르타르</b><br>' +
+      '<small>Lake Tharthar</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '알타르타르 지역 하쉬드 알아샤이리 거점 공습 보도<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([33.3152, 44.3661], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 알나바이</b><br>' +
+      '<small>Al Nabai</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '바그다드 권역 ‘알나바이’ PMF 시설 피격(직전 주기 언급)<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([33.8547, 35.8623], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>🏥 레바논</b><br>' +
+      '<small>Lebanon</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '레바논 전선 격화 연동으로 교민/체류자 대피 조치 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | humanitarian'
+    );
+
+    L.circleMarker([33.8938, 35.5018], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>🏥 베이루트</b><br>' +
+      '<small>Beirut</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '베이루트 체류 이라크인 1차 대피 개시 보도<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | humanitarian'
+    );
+
+    L.circleMarker([31.9539, 35.9106], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>🏥 암만</b><br>' +
+      '<small>Amman</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '베이루트-암만-이라크 경유 대피 동선 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | humanitarian'
     );
 
     L.circleMarker([35.6892, 51.389], {
@@ -181,119 +271,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ 테헤란</b><br>' +
+      '<b>💰 테헤란</b><br>' +
       '<small>Tehran</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이란 외무 발언 확산 및 UN 채널 통화 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([40.7489, -73.968], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 유엔</b><br>' +
-      '<small>United Nations (UN)</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '이란이 UN 채널로 호르무즈 관련 정당화 서사 강화 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([29.3117, 47.4818], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 쿠웨이트</b><br>' +
-      '<small>Kuwait</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '쿠웨이트 내 미 기지 공격 주장 유통<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([38.9637, 35.2433], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 터키</b><br>' +
-      '<small>Turkey</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '호르무즈 ‘선별 통과 승인’ 보도에서 관련국으로 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([20.5937, 78.9629], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 인도</b><br>' +
-      '<small>India</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '호르무즈 선박 ‘교환 논의 없었다’ 부인 및 선별 통과 관련 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([28.6139, 77.209], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 뉴델리</b><br>' +
-      '<small>New Delhi</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '인도 정부의 ‘이란과 호르무즈 선박 교환 논의 없었다’ 부인 발언 출처로 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([21.4735, 55.9754], {
-      radius: 6,
-      fillColor: '#3498db',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>💰 오만</b><br>' +
-      '<small>Oman</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '유가 관련 ‘오만유 $150 상회’ 주장 유통 언급<br>' +
-      '<span style="color:#3498db">● LOW</span> | economic'
-    );
-
-    L.circleMarker([30.5085, 47.7804], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>💰 바스라</b><br>' +
-      '<small>Basra</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '호르무즈 봉쇄 여파 속 이라크 원유 수출축(바그다드-바스라) 및 남부항 의존 리스크 언급<br>' +
+      '석유장관이 ‘이란과 직접 협의’(바그다드-테헤란)로 호르무즈 통과 논의 언급<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
-    L.circleMarker([37.0247, 35.8171], {
+    L.circleMarker([36.1911, 44.0092], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -301,10 +286,10 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 제이한</b><br>' +
-      '<small>Ceyhan</small><br>' +
+      '<b>💰 에르빌</b><br>' +
+      '<small>Erbil</small><br>' +
       '<hr style="margin:4px 0">' +
-      '바그다드가 KRG에 제이한 최소물량(10만 bpd) 요구 상향 재제시 가능성 언급<br>' +
+      '달러 환율이 바그다드·에르빌 장 마감 기준 상승 보도<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
