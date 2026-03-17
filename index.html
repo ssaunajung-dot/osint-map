@@ -43,7 +43,7 @@
 <body>
   <div id="header">
     <h1>🇮🇶 Iraq OSINT Map</h1>
-    <span class="time">Last updated: 2026. 3. 16. PM 10:01:08</span>
+    <span class="time">Last updated: 2026. 3. 17. AM 7:01:03</span>
   </div>
   <div id="map"></div>
   <script>
@@ -54,18 +54,18 @@
 
     
     L.circleMarker([33.2232, 43.6793], {
-      radius: 6,
-      fillColor: '#3498db',
+      radius: 9,
+      fillColor: '#f39c12',
       color: '#fff',
       weight: 2,
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ 이라크</b><br>' +
+      '<b>⚔️ 이라크</b><br>' +
       '<small>Iraq</small><br>' +
       '<hr style="margin:4px 0">' +
-      'Iraq OSINT 브리핑 대상 국가 언급<br>' +
-      '<span style="color:#3498db">● LOW</span> | political'
+      'IRI가 이라크 및 역내 미군 기지 표적 24시간 21회 작전 주장(이라크 전역 범주 포함)<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | military'
     );
 
     L.circleMarker([33.3152, 44.3661], {
@@ -79,7 +79,37 @@
       '<b>⚔️ 바그다드</b><br>' +
       '<small>Baghdad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '바그다드 공항권 드론 요격·정치 동향·발표 발신 및 대피수송 관련 언급<br>' +
+      '미 대사관(그린존) 로켓·드론 동시 공격 및 정부 차원의 공격 가해자 추적 지시 등 보고<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([33.3152, 44.3661], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 그린존</b><br>' +
+      '<small>Green Zone</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '바그다드 그린존 내 미 대사관이 로켓·드론 동시 공격 표적이 되었다는 보도<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([33.3152, 44.3661], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 바그다드 미 대사관</b><br>' +
+      '<small>U.S. Embassy Baghdad</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '로켓과 최소 5기 드론 발사로 미 대사관 직접 표적 공격 보도<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
@@ -94,11 +124,11 @@
       '<b>⚔️ 바그다드 국제공항</b><br>' +
       '<small>Baghdad International Airport</small><br>' +
       '<hr style="margin:4px 0">' +
-      '외교지원센터 주변 드론 2회 요격 및 공항 단지 피격 이후 연속 시도 언급<br>' +
+      '공항권(외교지원센터/외교시설 권역) 드론 요격 및 빅토리아 기지 로켓 공격 채택 보도<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([34.5338, 43.4837], {
+    L.circleMarker([33.2628, 44.2346], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -106,16 +136,91 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 살라흐딘 주</b><br>' +
-      '<small>Saladin Governorate</small><br>' +
+      '<b>⚔️ 빅토리아 기지</b><br>' +
+      '<small>Victoria Base (Baghdad Airport Complex)</small><br>' +
       '<hr style="margin:4px 0">' +
-      '발라드 공군기지 드론 위협 관련 주(행정구역) 언급<br>' +
+      '사라야 아울리야 알담이 바그다드 공항권 빅토리아 기지 로켓 공격을 채택했다는 보도<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
-    L.circleMarker([34.0146, 44.1453], {
+    L.circleMarker([36.1911, 44.0092], {
       radius: 12,
       fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 에르빌</b><br>' +
+      '<small>Erbil</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '국제공항·미 영사관 주변 드론 10회 이상 연속 공격 보고<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([36.2376, 43.9632], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 에르빌 국제공항</b><br>' +
+      '<small>Erbil International Airport</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '드론 10회 이상 연속 공격 및 방공 순차 대응 보도<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([36.1911, 44.0092], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 에르빌 미 영사관</b><br>' +
+      '<small>U.S. Consulate General Erbil</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '미 영사관 인근에서 드론 연속 공격이 보고됨<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([34.5333, 43.7833], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 살라흐딘</b><br>' +
+      '<small>Saladin Governorate</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '살라흐딘 사마라 방공이 드론 1기 격추 보고<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([34.198, 43.875], {
+      radius: 12,
+      fillColor: '#e74c3c',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>⚔️ 사마라</b><br>' +
+      '<small>Samarra</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '사마라 시 방공이 드론 1기 격추 보고(시의회 인근 방공 배치 지점 언급)<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | military'
+    );
+
+    L.circleMarker([34.0146, 44.1481], {
+      radius: 9,
+      fillColor: '#f39c12',
       color: '#fff',
       weight: 2,
       opacity: 1,
@@ -124,86 +229,11 @@
       '<b>⚔️ 발라드</b><br>' +
       '<small>Balad</small><br>' +
       '<hr style="margin:4px 0">' +
-      '발라드 공군기지에 폭탄 탑재 드론 낙하 보고<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([33.9406, 44.3616], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 발라드 공군기지</b><br>' +
-      '<small>Balad Air Base</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '폭탄 탑재 드론 낙하(위협) 보고<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([29.3759, 47.9774], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 쿠웨이트</b><br>' +
-      '<small>Kuwait</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'GCC 피격 언급(이라크 직접 파급 제외로 언급됨)<br>' +
+      '직전 주기 언급된 발라드 드론 위협이 배경으로 재언급됨<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | military'
     );
 
-    L.circleMarker([24.4539, 54.3773], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 아랍에미리트</b><br>' +
-      '<small>United Arab Emirates</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'GCC 피격 언급(이라크 직접 파급 제외로 언급됨)<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
-    );
-
-    L.circleMarker([25.2048, 55.2708], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 걸프협력회의</b><br>' +
-      '<small>Gulf Cooperation Council</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'GCC 피격 언급(범주 제외)에서 지역 블록으로 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([26.5667, 56.25], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>💰 호르무즈 해협</b><br>' +
-      '<small>Strait of Hormuz</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '부분 통과 및 연합 호송 논의 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | economic'
-    );
-
-    L.circleMarker([32.5598, 41.9196], {
+    L.circleMarker([35.5613, 45.4351], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -211,25 +241,10 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 알안바르</b><br>' +
-      '<small>Al Anbar Governorate</small><br>' +
+      '<b>⚔️ 술라이마니야</b><br>' +
+      '<small>Sulaymaniyah</small><br>' +
       '<hr style="margin:4px 0">' +
-      '알카임 PMF 공습 주장 관련 주(행정구역) 언급<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | military'
-    );
-
-    L.circleMarker([34.3781, 41.0195], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>⚔️ 알카임</b><br>' +
-      '<small>Al-Qaim</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'PMF مقر 피격 및 추가 공습 주장(사망자 수 상충) 보고<br>' +
+      '페쉬메르가 70여단 مقر 표적 드론 격추 보고<br>' +
       '<span style="color:#e74c3c">● HIGH</span> | military'
     );
 
@@ -241,29 +256,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏛️ 에르빌</b><br>' +
-      '<small>Erbil</small><br>' +
+      '<b>🏛️ KRG</b><br>' +
+      '<small>Kurdistan Regional Government</small><br>' +
       '<hr style="margin:4px 0">' +
-      '쿠르드 지역 수장 외교 접촉(EU 집행위원장-네치르반 바르자니 통화) 언급<br>' +
+      'KRG 권역에서 군사시설 직접 표적 시도 및 중앙정부와 수출 재개를 둘러싼 충돌 보도<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | political'
     );
 
-    L.circleMarker([50.8466, 4.3528], {
-      radius: 9,
-      fillColor: '#f39c12',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>🏛️ 유럽연합</b><br>' +
-      '<small>European Union</small><br>' +
-      '<hr style="margin:4px 0">' +
-      'EU 집행위원장과의 통화 및 대EU 채널 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | political'
-    );
-
-    L.circleMarker([30.5085, 47.7804], {
+    L.circleMarker([33.3152, 44.3661], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -271,14 +271,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 바스라</b><br>' +
-      '<small>Basra</small><br>' +
+      '<b>🏛️ 라시드 호텔</b><br>' +
+      '<small>Al-Rasheed Hotel</small><br>' +
       '<hr style="margin:4px 0">' +
-      '마즈눈 유전 드론 피격 관련 남부 거점 언급<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | economic'
+      '수다니가 대사관·라시드 호텔·마즈눈 유전 공격 가해자 추적 지시 발표<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | political'
     );
 
-    L.circleMarker([30.5085, 47.7804], {
+    L.circleMarker([31.7, 47.25], {
       radius: 12,
       fillColor: '#e74c3c',
       color: '#fff',
@@ -286,29 +286,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 바스라 주</b><br>' +
-      '<small>Basra Governorate</small><br>' +
-      '<hr style="margin:4px 0">' +
-      '마즈눈 유전 드론 피격 관련 주(행정구역) 언급<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | economic'
-    );
-
-    L.circleMarker([30.42, 47.25], {
-      radius: 12,
-      fillColor: '#e74c3c',
-      color: '#fff',
-      weight: 2,
-      opacity: 1,
-      fillOpacity: 0.8
-    }).addTo(map).bindPopup(
-      '<b>📍 마즈눈</b><br>' +
+      '<b>💰 마즈눈 유전</b><br>' +
       '<small>Majnoon Oil Field</small><br>' +
       '<hr style="margin:4px 0">' +
-      '마즈눈 유전 드론 2대 피격(통신탑·KBR 사무소 타격) 보고<br>' +
-      '<span style="color:#e74c3c">● HIGH</span> | infrastructure'
+      '수다니가 마즈눈 유전 공격 가해자 추적 지시 발표<br>' +
+      '<span style="color:#e74c3c">● HIGH</span> | economic'
     );
 
-    L.circleMarker([35.4681, 44.3922], {
+    L.circleMarker([36.955, 35.817], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -316,14 +301,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>💰 키르쿠크</b><br>' +
-      '<small>Kirkuk</small><br>' +
+      '<b>💰 제이한</b><br>' +
+      '<small>Ceyhan</small><br>' +
       '<hr style="margin:4px 0">' +
-      'BP 키르쿠크 철수 언급(북부 운영 리스크) <br>' +
+      '연방 석유부가 KRG에 제이한 수출 재개 촉구 및 법적 조치 경고<br>' +
       '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
-    L.circleMarker([32.0566, 38.2089], {
+    L.circleMarker([34.8021, 38.9968], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -331,14 +316,14 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏥 트리빌</b><br>' +
-      '<small>Trebil</small><br>' +
+      '<b>💰 시리아</b><br>' +
+      '<small>Syria</small><br>' +
       '<hr style="margin:4px 0">' +
-      '해외 체류 이라크인 육로(트리빌) 대피 수송 개시 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | humanitarian'
+      '호르무즈 차질 가정 하 시리아 바니야스 경유 수출 대안 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
-    L.circleMarker([31.9539, 35.9106], {
+    L.circleMarker([35.1819, 35.9487], {
       radius: 9,
       fillColor: '#f39c12',
       color: '#fff',
@@ -346,11 +331,56 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>🏥 요르단</b><br>' +
+      '<b>💰 바니야스</b><br>' +
+      '<small>Baniyas</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '시리아 바니야스 경유 수출 입찰 발행 보도<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | economic'
+    );
+
+    L.circleMarker([30.5852, 36.2384], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>💰 요르단</b><br>' +
       '<small>Jordan</small><br>' +
       '<hr style="margin:4px 0">' +
-      '트리빌 요르단 국경 언급(대피 수송 경로)<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | humanitarian'
+      '호르무즈 차질 가정 하 요르단 아카바 경유 수출 대안 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | economic'
+    );
+
+    L.circleMarker([29.5319, 35.0061], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>💰 아카바</b><br>' +
+      '<small>Aqaba</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '요르단 아카바 경유 수출 입찰 발행 보도<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | economic'
+    );
+
+    L.circleMarker([26.5667, 56.25], {
+      radius: 9,
+      fillColor: '#f39c12',
+      color: '#fff',
+      weight: 2,
+      opacity: 1,
+      fillOpacity: 0.8
+    }).addTo(map).bindPopup(
+      '<b>💰 호르무즈</b><br>' +
+      '<small>Strait of Hormuz</small><br>' +
+      '<hr style="margin:4px 0">' +
+      '호르무즈 부분 통과 주장 및 차질 장기화 가정이 경제·수출 대안 논의 배경으로 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | economic'
     );
 
     L.circleMarker([32.4279, 53.688], {
@@ -361,11 +391,11 @@
       opacity: 1,
       fillOpacity: 0.8
     }).addTo(map).bindPopup(
-      '<b>⚔️ 이란</b><br>' +
+      '<b>🏛️ 이란</b><br>' +
       '<small>Iran</small><br>' +
       '<hr style="margin:4px 0">' +
-      '이란 전쟁이 이라크로 파급되는 축으로 언급<br>' +
-      '<span style="color:#f39c12">● MEDIUM</span> | military'
+      '이란 전쟁이 이라크로 파급되는 양상으로 브리핑 전반의 배경으로 언급<br>' +
+      '<span style="color:#f39c12">● MEDIUM</span> | political'
     );
 
     var legend = L.control({position: 'bottomright'});
